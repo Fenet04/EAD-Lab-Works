@@ -1,0 +1,8 @@
+CREATE DATABASE BookstoreDB;
+USE BookstoreDB;
+CREATE TABLE Books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    price DOUBLE NOT NULL
+);
