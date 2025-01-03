@@ -1,0 +1,8 @@
+com\onlinebookstore\servlets\DisplayBooksServlet.class
+com\onlinebookstore\servlets\SearchBooksServlet.class
+com\onlinebookstore\servlets\BookRegistrationServlet.class
+com\onlinebookstore\db\DBConnectionManager.class
+com\onlinebookstore\ioc\BookRegistrationServlet.class
+com\onlinebookstore\servlets\DeleteBookServlet.class
+com\onlinebookstore\db\TestDBConnection.class
+com\onlinebookstore\models\TestLombok.class

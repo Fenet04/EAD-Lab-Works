@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- Define the LoggingAspect bean -->
+    <bean id="loggingAspect" class="com.example.aspects.LoggingAspect" />
+
+    <!-- Enable AOP -->
+    <aop:config>
+        <aop:aspect ref="loggingAspect">
+            <aop:pointcut id="taskRegistrationPointcut" expression="execution(* com.example.servlets.TaskRegistrationServlet.*(..))" />
+            <aop:before method="logBeforeTaskRegistration" pointcut-ref="taskRegistrationPointcut" />
+        </aop:aspect>
+    </aop:config>
+</beans>
