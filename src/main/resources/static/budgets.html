@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Budget Management</h2>
+        
+        <form id="createBudgetForm">
+            <label for="budget-category">Category:</label>
+			<input type="text" id="budget-category" required>
+
+			<label for="budget-timeframe">Time Frame:</label>
+			<select id="budget-timeframe">
+    			<option value="Weekly">Weekly</option>
+    			<option value="Monthly">Monthly</option>
+			</select>
+			
+			<label for="budget-limit">Budget Limit:</label> <!-- 🔥 Ensure this input exists -->
+			<input type="number" id="budget-limit" required>
+			
+			<label for="budget-limit-amount">Limit Amount:</label>
+			<input type="number" id="budget-limit-amount" required>
+
+
+			<button type="submit">Create Budget</button>
+
+        </form>
+
+        <h3>Active Budgets</h3>
+        <table id="budgetsTable">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Limit</th>
+                    <th>Time Frame</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="budgetList">
+                <!-- Budget entries will appear here -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/budgets.js" defer></script>
+</body>
+</html>

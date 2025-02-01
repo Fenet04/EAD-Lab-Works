@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BudgetSync</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1 class="brand">BudgetSync</h1>
+            <ul class="features">
+                <li>💰 Income Tracking</li>
+                <li>📊 Expense Tracking</li>
+                <li>🛠 Budget Customization</li>
+                <li>🎯 Goal Setting</li>
+                <li>🛡 Bill Management</li>
+            </ul>
+        </div>
+        <div class="right-panel">
+            <h2 class="login-title">Login</h2>
+            <div id="error-message" class="error"></div>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Sign In</button>
+            <p class="signup-link">New User? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

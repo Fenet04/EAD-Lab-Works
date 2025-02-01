@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+.container {
+    display: flex;
+    width: 800px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.left-panel {
+    width: 50%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 40px;
+}
+.left-panel .brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.left-panel .features li {
+    list-style: none;
+    margin: 15px 0;
+}
+.right-panel {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-panel h2 {
+    margin-bottom: 10px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #6a11cb;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #4a0c9a;
+}
+.signup-link a {
+    font-weight: bold;
+    color: #6a11cb;
+    text-decoration: none;
+}

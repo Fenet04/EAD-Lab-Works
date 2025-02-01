@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - BudgetSync</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel signup-bg"></div>
+        <div class="right-panel">
+            <h2>Create an account</h2>
+            <p>Let’s get started! This won’t take long.</p>
+            <div id="error-message" class="error"></div>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="signup()">Create Account</button>
+            <p>Already have an account? <a href="index.html">Sign In</a></p>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
